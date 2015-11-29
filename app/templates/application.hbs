@@ -1,5 +1,13 @@
 <div class="container">
-<h2 id="title">Welcome to Ember</h2>
-{{#link-to 'index'}}Index{{/link-to}} {{#link-to 'skills'}}Skills{{/link-to}}
+<h2 id="title">Welcome to NewBerekApp</h2>
+<hr>
+<ul class="nav nav-pills">
+  <li>{{#link-to 'index'}}Index{{/link-to}}</li>
+  <li>{{#link-to 'posts'}}Blog{{/link-to}}</li>
+  <li>{{#link-to 'skills'}}Skills{{/link-to}}</li>
+</ul>
+<hr>
 {{outlet}}
+<hr>
+<p class="text-center"><small>&copy; 2015 berek</small></p>
 </div>

@@ -1,6 +1,8 @@
-Skills
-<div>{{model.length}}</div>
+<h4>Skills</h4>
+<ul class="list-unstyled">
 {{#each model as |skill|}}
- <li>{{skill.name}} {{skill.percentage}}></li>
+ <li style="border:1px solid #f1f1f1;margin-bottom:3px;border-radius:3px;">
+   <span style="display:block;width:{{skill.percentage}}%;text-align:right;background:#f7f7f7;padding:3px 10px;border-right:1px solid #f1f1f1;">{{skill.name}} - {{skill.percentage}}%</span>
+ </li>
 {{/each}}
-No nie ma
+</ul>

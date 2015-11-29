@@ -4,7 +4,7 @@
 <ul class="list-unstyled">
 {{#each model as |posts|}}
  <li>
-   <h4>{{#link-to 'posts.post' posts.slug}}{{posts.title}}{{/link-to}}</h4>
+   <h4><a href="/blog/{{posts.slug}}">{{posts.title}}</a></h4>
    <small>{{posts.created_at}}</small>
    <div class="clearfix">
      {{{posts.intro}}}
